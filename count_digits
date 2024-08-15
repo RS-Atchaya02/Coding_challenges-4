@@ -1,0 +1,13 @@
+function countDigits(str) {
+    let digitCount = 0;
+    for (let i = 0; i < str.length; i++) {
+        const char = str[i];
+        if (char >= '0' && char <= '9') {
+            digitCount++;
+        }
+    }
+    return digitCount;
+}
+const exampleString = "A can Complete a work in 5 days , B can complete a work in 10 days and C done in 2 days ";
+const numberOfDigits = countDigits(exampleString);
+console.log(numberOfDigits); // Output 
